@@ -15,7 +15,7 @@ final class DataModel
     private $data;
     private $metadata;
 
-    public function __construct($type, $data, $metadata)
+    public function __construct($type, ?array $data, $metadata)
     {
         $this->type = $type;
         $this->data = $data ?? [];
